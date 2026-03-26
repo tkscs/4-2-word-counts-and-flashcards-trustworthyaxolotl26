@@ -20,10 +20,14 @@ def pad_word_count(essay):
     new_essay = essay
 
     #### START REPLACING CODE HERE
-    new_essay = new_essay.replace("n't", " not")
-    new_essay = new_essay.replace("'s'", " is")
-    new_essay = new_essay.replace("'re'", " are")
-    new_essay = new_essay.replace("'ve'", " have")
+    newer_essay = {"n't": " not", "'s": " is","'re": " are", "'ve": " have" }
+
+    keys = list(newer_essay.keys())
+    values = list(newer_essay.values())
+    for key in keys:
+      value = newer_essay[key]
+      new_essay = new_essay.replace(key, value)
+
     #### STOP REPLACING CODE HERE
 
     return new_essay

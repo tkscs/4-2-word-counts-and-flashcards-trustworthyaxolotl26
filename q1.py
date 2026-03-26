@@ -27,16 +27,18 @@ change in their communities and beyond.
 # (Hint: use the `.split()` method to get a list of all the words) and the
 # values are the number of times each word appears. Print the dicitonary.
 
+
 # 1. Remove all new lines and punctuation, and convert to all lowercase.
-#### YOUR CODE HERE
 
-# 2. Use the `.split()` method to split into a list of words.
-#### YOUR CODE HERE
+words = {}
 
-# 3. Initialize an empty dictionary to keep track of word counts.
-#### YOUR CODE HERE
-
-# 4. loop through the list of words and update the dictionary. If the word is
-# already a key in the dicitonary, increment the count. If not, add the new key
-# with a count of 1.
-#### YOUR CODE HERE
+for word in text.lower().split():
+    text.split(".")
+    text.split(",")
+    if word in words:
+        word.split(".")
+        word.split(",")
+        words[word] += 1
+    else: 
+        words[word] = 1
+print(words)

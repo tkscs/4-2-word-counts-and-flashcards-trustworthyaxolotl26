@@ -1,19 +1,32 @@
+import random
+
 # Update this dictionary with questions and answers:
 flashcards = {
-    "question": "answer"
+    "spanish" : "inglish",
+    "zorro" : "fox",
+    "gato" : "cat"
 }
 
 # Get a list of keys (questions) from the dictionary
-#### YOUR CODE HERE
+keys = list(flashcards.keys())
+values = list(flashcards.values())
+
+#print(keys)
 
 # Randomly sample one question
-#### YOUR CODE HERE
+#print(random.choice(keys))
 
 # Use the `input` function to ask the user the question and get their response
-#### YOUR CODE HERE
+memory = input(f"what is {random.choice(keys)} in inglish?")
 
 # Use the question as a key to look up the answer in the dicitonary
-#### YOUR CODE HERE
+for value in values:
+    if memory == value:
+        print("correct!")
+        break
+    else:
+        print(f"not quite! the awnser was {value}!")
+        break
 
 # Check if the response is the same as the answer, and give the user
 # feedback based on whether their response was correct or incorrect
